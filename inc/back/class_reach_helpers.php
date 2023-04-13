@@ -241,31 +241,31 @@ if (!class_exists('Reach_Helpers')) :
         public static function filterErrorMessage($msg) {
             switch ($msg) {
                 case 'PaymentAuthorizationFailed':
-                    $new_msg = __('Unfortunately authentication failed and is required for this transaction. Please try again.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'FraudSuspected':
-                    $new_msg = __('We are sorry, but your payment cannot be processed at this time.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'Error processing stash: CardNumberInvalid':
-                    $new_msg = __('Oops! Is that the correct number on your card? Please try entering the number again.', 'sbwc-reach-cc');
+                    $new_msg = __('The card number is incorrect or invalid.', 'sbwc-reach-cc');
                     break;
                 case 'CardVerificationCodeInvalid':
-                    $new_msg = __('The verification code for your card is invalid. Please check you verification code and try again.', 'sbwc-reach-cc');
+                    $new_msg = __('The card\'s security code is invalid.', 'sbwc-reach-cc');
                     break;
                 case 'CurrencyNotFound':
-                    $new_msg = __('We are sorry, but the currency used for this transaction is not supported by Reach.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'EmailAddressInvalid':
                     $new_msg = __('Please provide a valid email address.', 'sbwc-reach-cc');
                     break;
                 case 'PaymentMethodUnsupported':
-                    $new_msg = __('We are sorry, but the payment method you are using is either not supported by Reach, or not approved by the merchant.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'CardNameInvalid':
                     $new_msg = __('The card name you provided is invalid, please provide a valid name.', 'sbwc-reach-cc');
                     break;
                 case 'CardNumberInvalid':
-                    $new_msg = __('The card number you provided is invalid, please provide a valid number.', 'sbwc-reach-cc');
+                    $new_msg = __('The card number is incorrect or invalid.', 'sbwc-reach-cc');
                     break;
                 case 'CardYearInvalid':
                     $new_msg = __('The card year you provided is invalid, please provide a valid year.', 'sbwc-reach-cc');
@@ -274,7 +274,7 @@ if (!class_exists('Reach_Helpers')) :
                     $new_msg = __('The card month you provided is invalid, please provide a valid month.', 'sbwc-reach-cc');
                     break;
                 case 'CardExpired':
-                    $new_msg = __('The card you provided has expired, please provide alternative card details.', 'sbwc-reach-cc');
+                    $new_msg = __('The card has expired.', 'sbwc-reach-cc');
                     break;
                 case 'PostalCodeInvalid':
                     $new_msg = __('The postal code you provided is invalid.', 'sbwc-reach-cc');
@@ -283,10 +283,10 @@ if (!class_exists('Reach_Helpers')) :
                     $new_msg = __('The country you provided is invalid.', 'sbwc-reach-cc');
                     break;
                 case 'AmountLimitExceeded':
-                    $new_msg = __('We are sorry, but the transaction exceeds the maximum allowed amount for your card. Please try using a different card.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'Blacklisted':
-                    $new_msg = __('We are sorry, but your payment cannot be processed at this time.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'PhoneInvalid':
                     $new_msg = __('Please provide a valid phone number.', 'sbwc-reach-cc');
@@ -295,25 +295,25 @@ if (!class_exists('Reach_Helpers')) :
                     $new_msg = __('Please provide a valid region.', 'sbwc-reach-cc');
                     break;
                 case 'IssuerInvalid':
-                    $new_msg = __('Your card issuer is not recognized by Reach, or is invalid. Please try using a different card.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'ConsumerInvalid':
-                    $new_msg = __('It looks like the personal details you provided is invalid. Please check these details and try again.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'ConsigneeInvalid':
-                    $new_msg = __('It looks like the personal details you provided is invalid. Please check these details and try again.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'AuthenticationRequired':
-                    $new_msg = __('We are sorry, but this transaction requires in person authentication. Please try using a different card.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'PaymentAuthenticationCancelled':
-                    $new_msg = __('This transaction could not be completed because you cancelled it.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'AlreadyCancelled':
-                    $new_msg = __('We are sorry, but this transaction has been cancelled. Please try using a different card.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 case 'PaymentFailed':
-                    $new_msg = __('We are sorry, your payment was authorized but could not be completed. Please try using a different card.', 'sbwc-reach-cc');
+                    $new_msg = __('There was an error processing your credit card. Please try again with PayPal.', 'sbwc-reach-cc');
                     break;
                 default:
                     $new_msg = $msg;
