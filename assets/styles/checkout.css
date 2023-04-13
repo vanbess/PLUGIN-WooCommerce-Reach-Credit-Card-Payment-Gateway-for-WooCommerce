@@ -1,0 +1,244 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto-Bold.eot");
+    src: url("../font/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("../font/Roboto-Bold.woff2") format("woff2"), url("../font/Roboto-Bold.woff") format("woff"), url("../font/Roboto-Bold.ttf") format("truetype"), url("../font/Roboto-Bold.svg#Roboto-Bold") format("svg");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto-Regular.eot");
+    src: url("../font/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("../font/Roboto-Regular.woff2") format("woff2"), url("../font/Roboto-Regular.woff") format("woff"), url("../font/Roboto-Regular.ttf") format("truetype"), url("../font/Roboto-Regular.svg#Roboto-Regular") format("svg");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url("../font/Roboto-Medium.eot");
+    src: url("../font/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("../font/Roboto-Medium.woff2") format("woff2"), url("../font/Roboto-Medium.woff") format("woff"), url("../font/Roboto-Medium.ttf") format("truetype"), url("../font/Roboto-Medium.svg#Roboto-Medium") format("svg");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc {
+    background-color: #fff !important;
+    border: 1px solid #dedede;
+    padding: 0 !important;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_header {
+    padding: 20px;
+    border-bottom: 1px solid #f3f3f3;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_header p {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: "Roboto", sans-serif;
+    color: #000055;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_options {
+    padding: 0;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_options > input[name$="payment-method"] {
+    display: none;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_options > input[name$="payment-method"]:checked + .checkbox-label {
+    background-color: #000055;
+    color: #fff;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_options > input[name$="payment-method"]:checked + .checkbox-label::after {
+    content: '';
+    background-image: url("../images/tick.svg");
+    background-size: 21px 13px;
+    width: 21px;
+    height: 13px;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .payment_reach_box_options .checkbox-label {
+    font-size: 16px;
+    color: black;
+    font-weight: 500;
+    padding: 20px;
+    border-bottom: 1px solid #f3f3f3;
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper {
+    padding: 20px !important;
+    margin: 0 !important;
+    background-color: #fff;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.paypal-wrapper #paypal-text {
+    font-size: 16px;
+    color: #111;
+    margin-top: 12px;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.wc-credit-card-form label {
+    font-size: 14px;
+    color: black;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.wc-credit-card-form input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #fff;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0.1rem;
+    box-shadow: none;
+    display: block;
+    letter-spacing: -0.015em;
+    margin: 0;
+    max-width: 100%;
+    padding: 1rem;
+    width: 100%;
+    border-color: #7a9c59;
+    color: #000;
+    box-sizing: border-box;
+    width: 100%;
+    font-size: 16px !important;
+  }
+
+  input#reach-card-number{
+    margin-bottom: 1.25rem;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.wc-credit-card-form .required {
+    color: #cd2653;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container {
+    padding: 0;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label {
+    padding: 20px;
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    color: #666;
+    letter-spacing: 0.04em;
+    margin-bottom: 0;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label .checkmark {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 15px;
+    position: relative;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #d0d0d0;
+    border-radius: 50%;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label .checkmark::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    width: 0;
+    height: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: #000055;
+    transition: 0.1s ease-in-out;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label:hover, .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label.selected {
+    background-color: #f3f3f3;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach_payment_box_wrapper.payment_reach_issuers_container label.selected .checkmark::after {
+    display: block;
+    width: 8px;
+    height: 8px;
+    opacity: 100%;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .rch-badge {
+    background-color: #fafafa;
+    border-top: 1px solid #dedede;
+    padding: 35px 25px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .rch-badge .rch-badge-merchant-of-record {
+    display: block;
+    text-align: left;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .rch-badge img {
+    max-width: 110px;
+    max-height: 30px;
+    margin-top: 7px;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure {
+    display: flex;
+    align-items: center;
+    background-color: #dedede;
+    padding: 10px;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure .reach--logo {
+    flex: 0 1 40px;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure .reach--logo img {
+    max-height: 100%;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure .reach--content {
+    flex: 1;
+    margin-left: 10px;
+    border-left: 3px solid #626264;
+    padding-left: 10px;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure .reach--content p,
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure .reach--content a {
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 600;
+  }
+  
+  .wc_payment_method .payment_box.payment_method_reach_cc .reach--disclosure .reach--content a {
+    text-decoration: none;
+  }
