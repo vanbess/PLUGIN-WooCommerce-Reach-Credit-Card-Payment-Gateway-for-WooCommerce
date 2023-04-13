@@ -30,12 +30,12 @@ add_action('plugins_loaded', function () {
     require_once SBWC_REACH_PATH . 'inc/back/class_reach_response.php';
     require_once SBWC_REACH_PATH . 'inc/back/class_reach_log.php';
     require_once SBWC_REACH_PATH . 'inc/back/class_reach_cc.php';
-    
+
     // notifications
     require_once SBWC_REACH_PATH . 'inc/back/class_reach_notifications.php';
 
     // register payment gateway
-    add_filter('woocommerce_payment_gateways', function($gateways){
+    add_filter('woocommerce_payment_gateways', function ($gateways) {
         $gateways[] = 'Reach_CC';
         return $gateways;
     });
@@ -47,5 +47,25 @@ add_action('plugins_loaded', function () {
     add_action('wp_loaded', ['Reach_Notifications', 'handleNotifications']);
     add_action('wp_loaded', ['Reach_Notifications', 'handleReturnUrl']);
 
+    // register pll strings
+    if (function_exists('pll_register_string')) :
 
+        // strings
+        $strings = [
+            "Please provide a valid email address.",
+            "The card name you provided is invalid, please provide a valid name.",
+            "The card year you provided is invalid, please provide a valid year.",
+            "The card month you provided is invalid, please provide a valid month.",
+            "The postal code you provided is invalid.",
+            "The country you provided is invalid.",
+            "Please provide a valid phone number.",
+            "Please provide a valid region.",
+        ];
+
+        // register strings
+        foreach ($strings as $string) :
+            pll_register_string(md5($string), $string, 'SBWC Reach CC');
+        endforeach;
+
+    endif;
 });
