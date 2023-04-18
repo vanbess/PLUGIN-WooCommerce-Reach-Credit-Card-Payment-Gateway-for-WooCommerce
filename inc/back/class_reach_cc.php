@@ -51,7 +51,7 @@ if (!class_exists('Reach_CC')) :
             $this->title = $this->get_option('title');
             $this->description         = $this->get_option('description');
             $this->enabled             = $this->get_option('enabled');
-            $this->test_environment    = $this->get_option('test_environment');
+            $this->test_environment    = 'yes' === $this->get_option('test_environment');
             $this->merchant_id         = $this->test_environment ? $this->get_option('test_merchant_id') : $this->get_option('live_merchant_id');
             $this->merchant_secret_key = $this->test_environment ? $this->get_option('test_merchant_secret_key') : $this->get_option('live_merchant_secret_key');
 
